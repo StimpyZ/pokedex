@@ -7,28 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/poke-shadow.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Pokedex</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="img-container">
+            <img src="img/tabla-tipos.jpg" class="tabla-tipos" alt="">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="close">
+            <form action="" onsubmit="searchPokemon(event)">
+                <input type="text" placeholder="Search Pokemon" name="pokemon" autocomplete="off">
+            </form>
 
-    <form action="" onsubmit="searchPokemon(event)">
-        <input type="text" placeholder="Search Pokemon" name="pokemon" autocomplete="off">
-    </form>
+            <div id="data-poke-card" class="poke-card">
+                <div id="data-poke-name">Pokedex</div>
+                <div id="data-poke-image-container" class="image-container">
+                    <img src="img/poke-shadow.png" alt="pokeImg" id="data-poke-image" class="poke-image">
+                </div>
 
-    <div id="data-poke-card" class="poke-card">
-        <div id="data-poke-name">Pokedex</div>
-        <div id="data-poke-image-container" class="image-container">
-            <img src="img/poke-shadow.png" alt="pokeImg" id="data-poke-image" class="poke-image">
+                <div id="data-poke-id"></div>
+                <div id="poke-info" class="poke-info">
+                    <div id="data-poke-height"></div>
+                    <div id="data-poke-weight"></div>
+                </div>
+                <div id="data-poke-type" class="poke-type"></div>
+                <div id="data-poke-stats" class="poke-stats"></div>
+            </div>
+            <div class="btn">
+                <button class="button">Tabla de tipos</button>
+            </div>
         </div>
 
-        <div id="data-poke-id"></div>
-        <div id="poke-info" class="poke-info">
-            <div id="data-poke-height"></div>
-            <div id="data-poke-weight"></div>
-        </div>
-        <div id="data-poke-type" class="poke-type"></div>
-        <div id="data-poke-stats" class="poke-stats"></div>
     </div>
 
 

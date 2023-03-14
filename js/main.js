@@ -7,6 +7,11 @@ const pokeTypes = document.querySelector("#data-poke-type");
 const pokeStats = document.querySelector("#data-poke-stats");
 const pokeHeight = document.querySelector("#data-poke-height");
 const pokeWeight = document.querySelector("#data-poke-weight");
+const closeAll = document.querySelector('.close')
+const btn = document.querySelector('.button')
+const closeBtn = document.querySelector('.close-btn')
+const modal = document.querySelector('.img-container')
+const container = document.querySelector('.container')
 
 const typeColors = {
     bug: "#A8B820",
@@ -28,6 +33,23 @@ const typeColors = {
     fighting: "#C03028",
     default: "#2A1A1F",
 };
+
+btn.addEventListener('click', () => {
+    modal.classList.add('open-img')
+    closeAll.classList.add('close2')
+    container.classList.add('container2')
+})
+
+closeBtn.addEventListener('click', () => {
+    modal.classList.remove('open-img')
+    closeAll.classList.remove('close2')
+    container.classList.remove('container2')
+})
+
+
+
+
+
 
 const searchPokemon = (event) => {
     event.preventDefault();
