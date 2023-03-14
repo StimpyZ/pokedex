@@ -47,10 +47,6 @@ closeBtn.addEventListener('click', () => {
 })
 
 
-
-
-
-
 const searchPokemon = (event) => {
     event.preventDefault();
     const { value } = event.target.pokemon;
